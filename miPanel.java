@@ -87,6 +87,9 @@ public class miPanel extends JFrame{
             }
         });
 
+
+
+
         botondesapilar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -98,7 +101,6 @@ public class miPanel extends JFrame{
                 } catch (NumberFormatException ex) {
                     // Manejar la excepción de entrada no válida aquí
                 }
-
             }
         });
         Botonmostrar.addActionListener(new ActionListener() {
@@ -106,6 +108,8 @@ public class miPanel extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 if(h==null) txtAreaEstado.setText("No hay contenedores");
                 else txtAreaEstado.setText(h.toString());
+
+
             }
         });
         txtcuantos.addActionListener(new ActionListener() {
@@ -140,6 +144,8 @@ public class miPanel extends JFrame{
 
         });
     }
+
+
     public static void main(String[] args) {
         new miPanel();
     }
